@@ -47,7 +47,7 @@ def game():
         
         #Sees if the numbers are between 1 and 3
         while (guess_row < 1 or guess_row > 3) or (guess_col < 1 or guess_col > 3):
-            print "\nPlease choose numbers between 0 and 2. Please try again.\n"
+            print "\nPlease choose numbers between 1 and 3. Please try again.\n"
             guess_row = int(raw_input("Guess Row: "))
             guess_col = int(raw_input("Guess Col: "))
             print '\n'
@@ -179,6 +179,7 @@ def main():
     print "Let's play Tic Tac Toe!"
     print "PLAYER 1 WILL BE: X"
     print "PLAYER 2 WILL BE: O\n"
+    print "To play this game, enter the number row and number column you wish to put your letter in.\nFor example, if you want the top left square, enter 1 for both the row and the column to put your letter there.\n"
     print_board(board)
     print '\n'
     game()

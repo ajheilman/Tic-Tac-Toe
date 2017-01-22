@@ -149,28 +149,28 @@ def game():
         board[guess_row - 1][guess_col - 1] = "O"
         print_board(board)
         print '\n'
-        if board[0][0] == 'O' and board[0][1] == 'O' and board[0][2] == 'O':
+        if board[0][0] == 'O' and board[0][1] == 'O' and board[0][2] == 'O':    #Top row
             print playerTwoWin
             break
-        if board[1][0] == 'O' and board[1][1] == 'O' and board[1][2] == 'O':
+        if board[1][0] == 'O' and board[1][1] == 'O' and board[1][2] == 'O':    #Middle row
             print playerTwoWin
             break
-        if board[2][0] == 'O' and board[2][1] == 'O' and board[2][2] == 'O':
+        if board[2][0] == 'O' and board[2][1] == 'O' and board[2][2] == 'O':    #Bottom row
             print playerTwoWin
             break
-        if board[0][0] == 'O' and board[1][0] == 'O' and board[2][0] == 'O':
+        if board[0][0] == 'O' and board[1][0] == 'O' and board[2][0] == 'O':    #Left column
             print playerTwoWin
             break
-        if board[0][1] == 'O' and board[1][1] == 'O' and board[2][1] == 'O':
+        if board[0][1] == 'O' and board[1][1] == 'O' and board[2][1] == 'O':    #Middle column
             print playerTwoWin
             break
-        if board[0][2] == 'O' and board[1][2] == 'O' and board[2][2] == 'O':
+        if board[0][2] == 'O' and board[1][2] == 'O' and board[2][2] == 'O':    #Right column
             print playerTwoWin
             break
-        if board[0][0] == 'O' and board[1][1] == 'O' and board[2][2] == 'O':
+        if board[0][0] == 'O' and board[1][1] == 'O' and board[2][2] == 'O':    #Left diagonal
             print playerTwoWin
             break
-        if board[0][2] == 'O' and board[1][1] == 'O' and board[2][0] == 'O':
+        if board[0][2] == 'O' and board[1][1] == 'O' and board[2][0] == 'O':    #Right diagonal
             print playerTwoWin
             break
 
